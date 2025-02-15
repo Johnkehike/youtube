@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="youtube" id="youtube">
+        <nav class="nav" id="nav">
+            <div class="group-one" id="group-one">
+                <div class="menu-icon" id="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="youtube-icon" id="youtube-icon">
+                    <div class="logo-container" id="logo-container">
+                        <!-- <i class="fa-brands fa-youtube"></i> -->
+                         <!-- <div class="logo-youtube-background" id="logo-youtube-background"> -->
+                            <i class="fa-brands fa-youtube" style="color: #ff0033;"></i>
+                         <!-- </div> -->
+                        <h2 class="logo" id="logo">Youtube</h2>
+                    </div>
+                    <sup class="youtube-sup" id="youtube-sup">GB</sup>
+                </div>
+            </div>
+            <div class="group-two" id="group-two">
+                <form action="submit" class="form" id="form">
+                    <div class="input" id="input">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                        <input type="text" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <div class="microphone" id="microphone">
+                    <div class="mic-circle" id="mic-circle">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="group-three" id="group-three">
+                <div class="create-button" id="create-button">
+                    <!-- &#43; -->
+                   <button class="button-create" id="button-create" onclick="authenticate().then(loadClient)">
+                    <i class="fa-solid fa-plus"></i>
+                    Create</button>
+                </div>
+                <div class="notification" id="notification">
+                    <button class="notify" id="notify" onclick="execute()">
+                        <i class="fa-regular fa-bell"></i>
+                       
+                    </button>
+                    <sup class="notify-me" id="notify-me">9+</sup>
+                </div>
+                <div class="profile-name" id="profile-name">
+                    <div class="profile-icon" id="profile-icon">
+                        <p>J</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="body" id="body">
+            <div class="new-sidebar" id="new-sidebar">
+                <div class="home" id="home">
+                    <div class="all-items" id="all-items">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home" id="home">
+                    <div class="all-items" id="all-items">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home" id="home">
+                    <div class="all-items" id="all-items">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home" id="home">
+                    <div class="all-items" id="all-items">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <div class="first-section" id="first-section">
+                    <div class="clip" id="clip">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                    <div class="clip" id="clip">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Shorts</p>
+                        </div>
+                    </div>
+                    <div class="clip" id="clip">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-video-slash"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Subscriptions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-section" id="second-section">
+                    <div class="section-title" id="section-title">
+                        <p>You </p>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </div>
+                    <div class="section-body" id="section-body">
+                        <div class="clip-second" id="clip-second">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>History</p>
+                            </div>
+                        </div>
+                        <div class="clip-second" id="clip-second">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-brands fa-playstation"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Playlists</p>
+                            </div>
+                        </div>
+                        <div class="clip-second" id="clip-second">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Your videos</p>
+                            </div>
+                        </div>
+                        <div class="clip-second" id="clip-second">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Your courses</p>
+                            </div>
+                        </div>
+                        <div class="clip-second" id="clip-second">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-film"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Watch later</p>
+                            </div>
+                        </div>
+                        <div class="clip-second" id="clip-second">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Liked videos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section" id="third-section">
+                    <div class="section-title" id="section-title">
+                        <p>Subscriptions</p>
+                        <!-- <i class="fa-solid fa-greater-than"></i> -->
+                    </div>
+                    <div class="section-body" id="section-body">
+                        <div class="clip" id="clip">
+                            <div class="sidebar-profile-icon" id="sidebar-profile-icon">
+                                <img src="./assets/6.jpg" alt="">
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Home</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-profile-icon" id="sidebar-profile-icon">
+                                <img src="./assets/6.jpg" alt="">
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Shorts</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-profile-icon" id="sidebar-profile-icon">
+                                <img src="./assets/6.jpg" alt="">
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Subscriptions</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-profile-icon" id="sidebar-profile-icon">
+                                <img src="./assets/6.jpg" alt="">
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Subscriptions</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-profile-icon" id="sidebar-profile-icon">
+                                <img src="./assets/6.jpg" alt="">
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Subscriptions</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-profile-icon" id="sidebar-profile-icon">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Show more</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section" id="third-section">
+                    <div class="section-title" id="section-title">
+                        <p>Explore</p>
+                        
+                    </div>
+                    <div class="section-body" id="section-body">
+                        <div class="clip" id="clip">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Trending</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-music"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Music</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-clapperboard"></i> 
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Movies & TV</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-star-of-life"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Live</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>Gaming</p>
+                            </div>
+                        </div>
+                        <div class="clip" id="clip">
+                            <div class="sidebar-icon" id="sidebar-icon">
+                                <i class="fa-solid fa-square-rss"></i>
+                            </div>
+                            <div class="sidebar-title" id="sidebar-title">
+                                <p>News</p>
+                            </div>
+                        </div>
+                    
+
+
+
+
+                    <div class="clip" id="clip">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-baseball-bat-ball"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Sports</p>
+                        </div>
+                    </div>
+                    <div class="clip" id="clip">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-chalkboard"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Learning</p>
+                        </div>
+                    </div>
+                    <div class="clip" id="clip">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-vest-patches"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Fashion & Beauty</p>
+                        </div>
+                    </div>
+                    <div class="clip" id="clip">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-podcast"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Podcasts</p>
+                        </div>
+                    </div>
+                    <div class="clip" id="clip">
+                        <div class="sidebar-icon" id="sidebar-icon">
+                            <i class="fa-solid fa-microphone-lines-slash"></i>
+                        </div>
+                        <div class="sidebar-title" id="sidebar-title">
+                            <p>Playables</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+
+            <div class="main-container" id="main-container">
+                <!-- <div class="main-nav" id="main-nav">
+                    <div class="angle-left" id="angle-left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="all" id="all">
+                        <button>All</button>
+                    </div>
+
+                    <div class="music" id="music">
+                        <button>Music</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Podcasts</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Live</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Intercessions</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Righteousness</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Sketch comedy</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Alphablocks</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Mixes</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Contemplary Worship Music</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Application Software</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Lessons</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Public Speaking</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Recently Uploaded</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>Wateched</button>
+                    </div>
+                    <div class="music" id="music">
+                        <button>New to you</button>
+                    </div>
+                    <div class="angle-right" id="angle-right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div> -->
+
+
+                <div class="main-nav-container">
+                    <div class="angle-left" id="angle-left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                
+                    <div class="main-nav" id="main-nav">
+                        <div class="category-main"><button>All</button></div>
+                        <div class="category"><button>Music</button></div>
+                        <div class="category"><button>Podcasts</button></div>
+                        <div class="category"><button>Live</button></div>
+                        <div class="category"><button>Intercessions</button></div>
+                        <div class="category"><button>Righteousness</button></div>
+                        <div class="category"><button>Sketch comedy</button></div>
+                        <div class="category"><button>Alphablocks</button></div>
+                        <div class="category"><button>Mixes</button></div>
+                        <div class="category"><button>Contemplary Worship Music</button></div>
+                        <div class="category"><button>Application Software</button></div>
+                        <div class="category"><button>Lessons</button></div>
+                        <div class="category"><button>Public Speaking</button></div>
+                        <div class="category"><button>Recently Uploaded</button></div>
+                        <div class="category"><button>Watched</button></div>
+                        <div class="category"><button>New to you</button></div>
+                        <div class="category"><button>Public Speaking</button></div>
+                        <div class="category"><button>Recently Uploaded</button></div>
+                        <div class="category"><button>Watched</button></div>
+                        <div class="category"><button>New to you</button></div>
+                    </div>
+                
+                    <div class="angle-right" id="angle-right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+
+
+                <div class="main-body-container" id="main-body-container">
+                    <!-- <div class="each-row" id="each-row"> -->
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="absolute-name" id="absolute-name">
+                                        <button class="absolute-button" id="absolute-button">Arome Osayi</button>
+                                    </div>
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical" id="vert"></i>
+                                </div>
+
+
+                                <div class="non-action-box" id="action-box">
+                                    <div class="section-one" id="section-one">
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-house"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Home</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="section-two" id="section-two">
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-house"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Home</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                </div>
+    
+                            </div>
+
+
+                            </div>
+                            </div>
+                            
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical" id="vert"></i>
+                                </div>
+
+                                <div class="non-action-box" id="action-box">
+                                    <div class="section-one" id="section-one">
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-house"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Home</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="section-two" id="section-two">
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-house"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Home</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                </div>
+    
+                            </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical" id="vert"></i>
+                                </div>
+
+                                <div class="non-action-box" id="action-box">
+                                    <div class="section-one" id="section-one">
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-house"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Home</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="section-two" id="section-two">
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-house"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Home</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Shorts</p>
+                                            </div>
+                                        </div>
+                                        <div class="clip" id="clip">
+                                            <div class="sidebar-icon" id="sidebar-icon">
+                                                <i class="fa-solid fa-video-slash"></i>
+                                            </div>
+                                            <div class="sidebar-title" id="sidebar-title">
+                                                <p>Subscriptions</p>
+                                            </div>
+                                        </div>
+                                </div>
+    
+                            </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    <!-- </div> -->
+
+                    <!-- <div class="each-row" id="each-row"> -->
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    <!-- </div> -->
+
+                    <!-- <div class="each-row" id="each-row"> -->
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    <!-- </div> -->
+
+                    <!-- <div class="each-row" id="each-row"> -->
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="each-item" id="eachitem">
+                            <div class="each-video" id="each-video">
+                                <video src="./assets/merakiFirmwareUpgrade.mp4"></video>
+                            </div>
+                            <div class="video-text" id="video-text">
+                                <div class="profile-video-description" id="profile-video-description">
+                                    <img src="./assets/6.jpg" alt="">
+                                </div>
+                                <div class="mid-description" id="mid-description">
+                                    <div class="mid-descr-title" id="mid-descr-title">
+                                        <h3>40 days challenges 40 days challenges 40 days challenges</h3>
+                                    </div>
+                                    <div class="profile-name" id="profile-name">
+                                        <p>Arome Osayi TV</p>
+                                    </div>
+                                    <div class="views" id="views">
+                                        <div class="no-view" id="no-view">
+                                            <p>15k views</p>
+                                        </div>
+                                        <div class="dot" id="dot">
+                                            <sup>.</sup>
+                                        </div>
+                                        <div class="time-streamed" id="time-streamed">
+                                            <p>Streamed 3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description" id="menu-description">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    <!-- </div> -->
+                </div>
+
+
+                <!-- <div class="main-body" id="main-body">
+
+                </div> -->
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://kit.fontawesome.com/9125c408bc.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
