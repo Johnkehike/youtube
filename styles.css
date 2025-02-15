@@ -1011,7 +1011,7 @@ html, body {
 
 @media screen and (max-width: 553px){
     .each-item{
-        min-width: 17rem;
+        min-width: 25rem;
     }
 
 }
