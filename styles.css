@@ -922,6 +922,11 @@ html, body {
         min-width: 17rem;
     }
   }
+  @media screen and (max-width: 853px) {
+    .each-item {
+        min-width: 22rem;
+    }
+}
 
   @media screen and (max-width: 768px){
     .main-body-container{
@@ -1011,7 +1016,25 @@ html, body {
 
 @media screen and (max-width: 553px){
     .each-item{
+        min-width: 23rem;
+    }
+
+}
+@media screen and (max-width: 430px){
+    .each-item{
         min-width: 25rem;
+    }
+
+}
+@media screen and (max-width: 430px){
+    .each-item{
+        min-width: 25rem;
+    }
+
+}
+@media screen and (max-width: 412px){
+    .each-item{
+        min-width: 24rem;
     }
 
 }
