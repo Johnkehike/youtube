@@ -729,6 +729,10 @@ html, body {
     position: relative;
 }
 .video-container-additions{
+display: none;
+
+}
+.video-container-additions-non{
     width: fit-content;
     height: fit-content;
     position: absolute;

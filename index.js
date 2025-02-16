@@ -7,6 +7,36 @@ let closeInput = document.getElementById('close-mobile-search');
 let vid = document.querySelector('.vid');
 const progressBar = document.querySelectorAll(".progress-bar");
 const progressContainer = document.querySelectorAll(".progress-container");
+
+// document.querySelectorAll('.video-container-additions-non').forEach((menu,index)=>{
+//   menu.addEventListener('mouseover',()=>{
+//     console.log('mine');
+    
+//     menu.style.display = `none`;
+//   })
+// });
+
+// document.querySelectorAll('.video-container-additions').forEach((menu,index)=>{
+//   menu.addEventListener('mouseout',()=>{
+//     menu.style.display = '';
+//   })
+// })
+
+// videoContainer.addEventListener('mouseover', () =>{
+//   console.log('mine');
+  
+//   videoContainer.classList.remove('video-container-additions-none');
+//   videoContainer.classList.add('video-container-additions');
+// });
+
+// videoContainer.addEventListener('mouseout', () =>{
+//   videoContainer.classList.remove('video-container-additions');
+//   videoContainer.classList.add('video-container-additions-none');
+// });
+
+
+
+
 // console.log(vid);
 
 // Update Progress Bar
@@ -32,8 +62,24 @@ document.querySelectorAll('.vid').forEach((menu, index)=>{
     
     
 
-  })
-  
+  }
+)
+  menu.addEventListener('mouseover',(e)=>{
+    // console.log(e.target.parentElement.querySelector('.video-container-additions'));
+    let hoverEffected = e.target.parentElement.querySelector('.video-container-additions');
+    // hoverEffected.classList.remove('video-container-additions');
+    hoverEffected.classList.add('video-container-additions-non')
+    
+  });
+
+  menu.addEventListener('mouseleave',(e)=>{
+    // console.log(e.target.parentElement.querySelector('.video-container-additions'));
+    let hoverEffected = e.target.parentElement.querySelector('.video-container-additions');
+    hoverEffected.classList.remove('video-container-additions-non');
+    hoverEffected.classList.add('video-container-additions')
+    
+  });
+
   function formatTime(seconds) {
   let hrs = Math.floor(seconds / 3600);
   let mins = Math.floor((seconds % 3600) / 60);
