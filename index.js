@@ -1,6 +1,29 @@
 let actionBox = document.getElementById('action-box');
 let videoMenus = document.querySelectorAll('.fa-ellipsis-vertical');
+let openInputMobile = document.getElementById('open-input');
+let mobileInput = document.getElementById('nav-mini');
+let otherInput = document.getElementById('nav');
+let closeInput = document.getElementById('close-mobile-search');
 
+openInputMobile.addEventListener('click', openMobileSearch);
+closeInput.addEventListener('click', openMobileSearch);
+
+function openMobileSearch(e){
+  if (mobileInput.classList.contains('nav-mini-non')) {
+    otherInput.style.display = 'none';
+    mobileInput.classList.remove('nav-mini-non');
+    mobileInput.classList.add('nav-mini');
+  }else if (mobileInput.classList.contains('nav-mini')) {
+    mobileInput.classList.remove('nav-mini');
+    otherInput.style.display = '';
+    mobileInput.classList.add('nav-mini-non');
+  }
+
+}
+
+// function closeMobilesearch(){
+
+// }
 
 document.querySelectorAll('.fa-ellipsis-vertical').forEach((menu, index) => {
     menu.addEventListener('click', openActionBox)
@@ -62,6 +85,12 @@ function closeActionBox(event) {
     }
 }
 
+function refreshPage(){
+  setTimeout(function() {
+    location.reload();
+  }, 60000); // Refresh the page after 5 seconds
+}
+// refreshPage()
 
 function authenticate() {
     return gapi.auth2.getAuthInstance()
