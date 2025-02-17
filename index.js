@@ -1,4 +1,3 @@
-// let actionBox = document.getElementById('action-box');
 let videoMenus = document.querySelectorAll('.fa-ellipsis-vertical');
 let openInputMobile = document.getElementById('open-input');
 let mobileInput = document.getElementById('nav-mini');
@@ -8,56 +7,22 @@ let vid = document.querySelector('.vid');
 const progressBar = document.querySelectorAll(".progress-bar");
 const progressContainer = document.querySelectorAll(".progress-container");
 
-// document.querySelectorAll('.video-container-additions-non').forEach((menu,index)=>{
-//   menu.addEventListener('mouseover',()=>{
-//     console.log('mine');
-    
-//     menu.style.display = `none`;
-//   })
-// });
-
-// document.querySelectorAll('.video-container-additions').forEach((menu,index)=>{
-//   menu.addEventListener('mouseout',()=>{
-//     menu.style.display = '';
-//   })
-// })
-
-// videoContainer.addEventListener('mouseover', () =>{
-//   console.log('mine');
-  
-//   videoContainer.classList.remove('video-container-additions-none');
-//   videoContainer.classList.add('video-container-additions');
-// });
-
-// videoContainer.addEventListener('mouseout', () =>{
-//   videoContainer.classList.remove('video-container-additions');
-//   videoContainer.classList.add('video-container-additions-none');
-// });
 
 
 
 
-// console.log(vid);
 
-// Update Progress Bar
-// vid.addEventListener("timeupdate", () => {
-//   const progressPercent = (vid.currentTime / vid.duration) * 100;
-//   progressBar.style.width = `${progressPercent}%`;
-// });
+
 
 document.querySelectorAll('.vid').forEach((menu, index)=>{
   menu.addEventListener('timeupdate', (e)=>{
     const progressPercent = (menu.currentTime / menu.duration) * 100;
     let newProgressBar = e.target.parentElement.querySelector('.progress-bar');
     newProgressBar.style.width = `${progressPercent}%`;
-    // let timing = e.target.parentElement.querySelector('.video-container-additions').querySelector('.vid-two-group').querySelector('.video-time');
-    // console.log(timing);
+
     let tu = e.target.parentElement.children[1].children[1].children[0];
     
-    // console.log(e.target.parentElement.children[1].children[1].children[0]);
-    
-    // tu.textcontent = formatTime(menu.currentTime);
-    tu.innerHTML = formatTime(menu.currentTime); // Instead of textContent
+    tu.innerHTML = formatTime(menu.currentTime); 
     tu.offsetHeight;
     
     
@@ -199,12 +164,6 @@ function closeActionBox(event) {
       actionBoxx.classList.add('non-action-box');
     }
   })
- 
-    // if () {
-    //     actionBox.classList.remove('action-box');
-    //     actionBox.classList.add('non-action-box');
-   
-    // }
 }
 
 function refreshPage(){
